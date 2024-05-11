@@ -78,7 +78,7 @@ function App() {
             className="t"
             type="text"
           />
-          <Button variant="contained" sx={{ width: "250px" }} onClick={Qosh}>
+          <Button variant="contained" sx={{ width: "100px" }} onClick={Qosh}>
             Add
           </Button>
         </div>

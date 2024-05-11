@@ -107,7 +107,8 @@ const List: React.FC<Props> = ({ ob }) => {
         maxWidth: 800,
         height: 500,
         overflow: "auto",
-        border: "1px #000 solid",
+        border: "1px #b6a5a5 solid",
+        background: "000"
       }}
       component={Paper}
     >
@@ -144,6 +145,7 @@ const List: React.FC<Props> = ({ ob }) => {
                     setRendr(row.id);
                   }}
                   align="right"
+                  padding="none"
                 >
                   <Button>
                     <svg
@@ -157,7 +159,7 @@ const List: React.FC<Props> = ({ ob }) => {
                     </svg>
                   </Button>
                 </StyledTableCell>
-                <StyledTableCell align="right">
+                <StyledTableCell align="right" width={70} padding="none">
                   <Button onClick={() => Edit(row.id)}>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
